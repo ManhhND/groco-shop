@@ -4,9 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.products.field_btn_product
-    - field.field.node.products.field_cate
+    - field.field.node.products.field_categories_product
     - field.field.node.products.field_img_product
-    - field.field.node.products.field_img_product2
     - field.field.node.products.field_info_product
     - field.field.node.products.field_nam
     - field.field.node.products.field_price_product
@@ -15,7 +14,6 @@ dependencies:
     - image.style.thumbnail
     - node.type.products
   module:
-    - entity_reference_revisions
     - image
     - link
     - path
@@ -39,26 +37,18 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_cate:
-    weight: 125
+  field_categories_product:
+    weight: 130
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_autocomplete
     region: content
   field_img_product:
     weight: 121
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_img_product2:
-    weight: 127
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

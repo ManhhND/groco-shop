@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.shop.field_category_shop
     - field.field.node.shop.field_d
     - field.field.node.shop.field_img_shop
     - field.field.node.shop.field_info_shop
@@ -11,7 +12,6 @@ dependencies:
     - field.field.node.shop.field_logo_shop
     - field.field.node.shop.field_map_shop
     - field.field.node.shop.field_name_shop
-    - field.field.node.shop.field_shop_category
     - field.field.node.shop.field_shop_contact
     - node.type.shop
   module:
@@ -27,6 +27,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_category_shop: true
   field_d: true
   field_img_shop: true
   field_info_shop: true
@@ -34,5 +35,4 @@ hidden:
   field_logo_shop: true
   field_map_shop: true
   field_name_shop: true
-  field_shop_category: true
   field_shop_contact: true

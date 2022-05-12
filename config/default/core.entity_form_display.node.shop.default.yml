@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.shop.field_category_shop
     - field.field.node.shop.field_d
     - field.field.node.shop.field_img_shop
     - field.field.node.shop.field_info_shop
@@ -10,7 +11,6 @@ dependencies:
     - field.field.node.shop.field_logo_shop
     - field.field.node.shop.field_map_shop
     - field.field.node.shop.field_name_shop
-    - field.field.node.shop.field_shop_category
     - field.field.node.shop.field_shop_contact
     - image.style.thumbnail
     - node.type.shop
@@ -31,6 +31,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_category_shop:
+    weight: 131
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_d:
     weight: 130
     settings:
@@ -85,16 +95,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_shop_category:
-    weight: 124
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   field_shop_contact:
     weight: 128

@@ -5,9 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.products.field_btn_product
-    - field.field.node.products.field_cate
+    - field.field.node.products.field_categories_product
     - field.field.node.products.field_img_product
-    - field.field.node.products.field_img_product2
     - field.field.node.products.field_info_product
     - field.field.node.products.field_nam
     - field.field.node.products.field_price_product
@@ -28,9 +27,8 @@ content:
     region: content
 hidden:
   field_btn_product: true
-  field_cate: true
+  field_categories_product: true
   field_img_product: true
-  field_img_product2: true
   field_info_product: true
   field_nam: true
   field_price_product: true
