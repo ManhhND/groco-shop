@@ -1,0 +1,193 @@
+.view-id-search_product{
+    margin: 2rem 6%;
+}
+
+
+.view-id-search_product .form--inline{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* -----NAME */
+
+.view-id-search_product .form--inline .form-item-field-nam-value{
+    background-color: #fff;
+    margin-right: 2rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(107, 102, 102, 0.438);
+    display: flex;
+    align-items: center;
+}
+
+.view-id-search_product .form--inline .form-item-field-nam-value label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-left: 1rem;
+    padding-right: 1rem;
+    border-right: .1rem solid rgba(107, 102, 102, 0.438);
+}
+
+
+.view-id-search_product .form--inline .form-item-field-nam-value input{
+    font-size: 1.4rem;
+    margin-left: 1rem;  
+
+    
+}
+
+
+/* ----CATEGORY */
+
+
+.view-id-search_product .form--inline .form-item-field-categories-product-target-id{
+    background-color: #fff;
+    margin-right: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    border: .1rem solid rgba(107, 102, 102, 0.438);
+
+}
+
+.view-id-search_product .form--inline .form-item-field-categories-product-target-id label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-left: 1rem;
+    border-right: .1rem solid rgba(58, 54, 54, 0);
+    padding-right: 1rem;
+}
+
+.view-id-search_product .form--inline .form-item-field-categories-product-target-id select{
+    height: 100%;
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: bold;
+    padding-left: 2rem;
+    border-radius: .5rem;
+    padding-right: 1rem;
+}
+
+.view-id-search_product .form--inline .form-item-field-categories-product-target-id select option {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+
+
+
+
+/* ---BUTTON SEARCH */
+.view-id-search_product .view-header p{
+    font-size: 1.5rem;
+}
+
+
+.view-id-search_product .form--inline .form-actions{
+    font-size: 1.2rem;
+    border: .1rem solid rgba(107, 102, 102, 0.438);
+    background-color: #DDDDDD;
+    height: 60px;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.3rem;cursor: pointer;
+
+}
+
+.view-id-search_product .form--inline .form-actions input{
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #DDDDDD;
+}
+
+
+.view-id-search_product .form--inline .form-actions:hover input{
+    color: var(--orange);
+    
+}
+
+/* --TITLE */
+.view-id-search_product .view-header {
+    font-size: 1.2rem;
+    border-bottom:.15rem solid rgba(204, 203, 203, 0.527);
+    padding-bottom: 2rem;
+    display: block;
+    color: var(--light-color);
+}
+
+.view-id-search_product .view-header .title p{
+    font-size: 2.5rem;
+    color:var(--black);
+    font-weight: bold;
+    margin-bottom: .5rem;
+
+
+}
+/* ---VIEW-PRODUCTS */
+
+.view-id-search_product .view-content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+
+}
+
+
+
+.view-id-search_product .view-content .views-row{
+    background-color: #fff;
+    text-align: center;
+    border-radius: .5rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+}
+
+.view-id-search_product .view-content .views-row:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.view-id-search_product .view-content .views-row .views-field-field-img-product img{
+    height: 12rem;
+    width: 12rem;
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+    margin: 2rem 0;
+}
+
+/* .view-id-search_product .view-content .views-row .views-field-field-img-product:hover img{
+    transform: scale(1.1);
+} */
+
+.view-id-search_product .view-content .views-row .views-field-field-nam a{
+    font-size: 2.2rem;
+    color: var(--black);
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.view-id-search_product .view-content .views-row .views-field-field-price-product{
+    font-size: 1.4rem;
+    color: var(--light-color);
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+
+/* ---PAGE  */
+
+.view-id-search_product .pager{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: var(--black);
+}
+
+.view-id-search_product .pager .pager__item a{
+    color: var(--black);
+}

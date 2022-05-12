@@ -23,6 +23,7 @@ global-styling:
       css/products/product-slide.css: {}
       css/contactus/breadcrumb.css: {}
       css/contactus/contactuspage.css: {}
+      css/search/searchproduct.css: {}
 
 
 
