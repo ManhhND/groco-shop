@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.shop.field_logo_shop
     - field.field.node.shop.field_map_shop
     - field.field.node.shop.field_name_shop
+    - field.field.node.shop.field_product_by_shop
     - field.field.node.shop.field_shop_contact
     - image.style.thumbnail
     - node.type.shop
@@ -95,6 +96,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_product_by_shop:
+    weight: 132
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_shop_contact:
     weight: 128

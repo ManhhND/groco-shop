@@ -11,13 +11,16 @@ dependencies:
     - field.field.node.shop.field_logo_shop
     - field.field.node.shop.field_map_shop
     - field.field.node.shop.field_name_shop
+    - field.field.node.shop.field_product_by_shop
     - field.field.node.shop.field_shop_contact
     - node.type.shop
+    - views.view.search_shop
   module:
     - image
     - leaflet
     - text
     - user
+    - views_field_formatter
     - webform
 id: node.shop.default
 targetEntityType: node
@@ -149,6 +152,30 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_product_by_shop:
+    weight: 10
+    label: above
+    settings:
+      view: 'search_shop::block_1'
+      arguments:
+        field_value:
+          checked: '1'
+          weight: '0'
+        entity_id:
+          checked: '1'
+          weight: '0'
+        delta:
+          checked: '1'
+          weight: '0'
+        entity_revision_id:
+          checked: '1'
+          weight: '0'
+      implode_character: ''
+      hide_empty: 0
+      multiple: 0
+    third_party_settings: {  }
+    type: views_field_formatter
     region: content
   field_shop_contact:
     weight: 6
