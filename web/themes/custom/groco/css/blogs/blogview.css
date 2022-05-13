@@ -108,12 +108,13 @@
 }
 
 .block-views-blockadvertisement-block-1 .views-row{
-    height: 10rem;
+    height: 15rem;
     /* box-shadow: var(--box-shadow); */
     outline: var(--outline);
     outline-offset: -1rem;
     transition: .2s linear;
     border-radius: .5rem;
+    margin-bottom: 1.2rem;
 }
 
 .block-views-blockadvertisement-block-1 .views-row:hover{
@@ -129,6 +130,14 @@
     width: 50%;
     float: left;
     height: 100%;
+}
+
+.block-views-blockadvertisement-block-1 .views-field-field-img-product img{
+    height: 10rem;
+    width: 10rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+
 }
 
 

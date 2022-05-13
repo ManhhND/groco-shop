@@ -1,4 +1,4 @@
-uuid: 33a1349f-d6b2-4142-9c3a-17a798d62691
+uuid: 7d31fcdd-e581-45ab-9c5b-8f8b3724a2d7
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,14 @@ dependencies:
     - field.storage.node.field_nam
     - field.storage.node.field_price_product
     - node.type.products
+    - taxonomy.vocabulary.category
   module:
     - image
     - node
+    - taxonomy
     - user
-id: product_in_shop
-label: 'Product in shop'
+id: search_product
+label: 'Search Product'
 module: views
 description: ''
 tag: ''
@@ -53,13 +55,13 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 8
+          items_per_page: 10
           offset: 0
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: ‹‹
+            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -75,6 +77,11 @@ display:
         type: default
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         field_img_product:
           id: field_img_product
@@ -292,6 +299,94 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        field_nam_value:
+          id: field_nam_value
+          table: node__field_nam
+          field: field_nam_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: word
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_nam_value_op
+            label: 'Name Product'
+            description: ''
+            use_operator: false
+            operator: field_nam_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_nam_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: Fresh
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
+        field_categories_product_target_id:
+          id: field_categories_product_target_id
+          table: node__field_categories_product
+          field: field_categories_product_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categories_product_target_id_op
+            label: Category
+            description: ''
+            use_operator: false
+            operator: field_categories_product_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categories_product_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: category
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -308,52 +403,23 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Product in shop'
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments:
-        field_shop_products_target_id:
-          id: field_shop_products_target_id
-          table: node__field_shop_products
-          field: field_shop_products_target_id
+      title: 'Search Product'
+      header:
+        result:
+          id: result
+          table: views
+          field: result
           relationship: none
           group_type: group
           admin_label: ''
-          default_action: default
-          exception:
-            value: all
-            title_enable: false
-            title: All
-          title_enable: false
-          title: ''
-          default_argument_type: node
-          default_argument_options: {  }
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            items_per_page: 25
-            override: false
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: false
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          break_phrase: false
-          not: false
-          plugin_id: numeric
+          empty: false
+          content: 'Products @start - @end of @total'
+          plugin_id: result
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
       display_extenders: {  }
-      link_url: /home
-      link_display: custom_url
-      use_more: false
-      use_more_always: true
-      use_more_text: 'See More Products'
       use_ajax: true
     cache_metadata:
       max-age: -1
@@ -362,19 +428,21 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_img_product'
         - 'config:field.storage.node.field_nam'
         - 'config:field.storage.node.field_price_product'
-  block_1:
-    display_plugin: block
-    id: block_1
-    display_title: Block
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
+      path: search-product
     cache_metadata:
       max-age: -1
       contexts:
@@ -382,6 +450,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

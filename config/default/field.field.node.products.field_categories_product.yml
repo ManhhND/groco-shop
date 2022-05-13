@@ -1,15 +1,13 @@
-uuid: 44000436-63ef-496a-af7c-3b8994e598ce
+uuid: 49ef96a3-b57f-4799-8540-258942f387df
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_cate
-    - node.type.categories
+    - field.storage.node.field_categories_product
     - node.type.products
-  module:
-    - entity_reference_revisions
-id: node.products.field_cate
-field_name: field_cate
+    - taxonomy.vocabulary.category
+id: node.products.field_categories_product
+field_name: field_categories_product
 entity_type: node
 bundle: products
 label: categories-product
@@ -19,12 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      categories: categories
+      category: category
     sort:
-      field: _none
+      field: name
+      direction: asc
     auto_create: false
     auto_create_bundle: ''
-field_type: entity_reference_revisions
+field_type: entity_reference

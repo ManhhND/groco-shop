@@ -1,15 +1,16 @@
-uuid: bf8911f1-c6da-4ba5-a0be-60a9b7f2bd22
+uuid: 8c955aaa-e686-4f41-9900-d801ea5a4c93
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_shop_category
-field_name: field_shop_category
+    - taxonomy
+id: node.field_category_shop
+field_name: field_category_shop
 entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1
