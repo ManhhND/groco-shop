@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.shop.field_logo_shop
     - field.field.node.shop.field_map_shop
     - field.field.node.shop.field_name_shop
+    - field.field.node.shop.field_product_by_shop
     - field.field.node.shop.field_shop_contact
     - node.type.shop
   module:
@@ -35,4 +36,5 @@ hidden:
   field_logo_shop: true
   field_map_shop: true
   field_name_shop: true
+  field_product_by_shop: true
   field_shop_contact: true
