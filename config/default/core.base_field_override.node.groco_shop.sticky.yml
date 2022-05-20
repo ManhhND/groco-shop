@@ -1,0 +1,22 @@
+uuid: 98c9cda5-4149-4166-bd05-bb80a65b2da0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.groco_shop
+id: node.groco_shop.sticky
+field_name: sticky
+entity_type: node
+bundle: groco_shop
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

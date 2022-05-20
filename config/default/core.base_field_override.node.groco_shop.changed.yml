@@ -1,0 +1,18 @@
+uuid: f18d1632-b577-4bcb-bf0f-51cfe8bb7620
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.groco_shop
+id: node.groco_shop.changed
+field_name: changed
+entity_type: node
+bundle: groco_shop
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,22 @@
+uuid: 956b6ce0-8920-4266-a2f9-fdcb0b69d815
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.groco_shop
+id: node.groco_shop.promote
+field_name: promote
+entity_type: node
+bundle: groco_shop
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

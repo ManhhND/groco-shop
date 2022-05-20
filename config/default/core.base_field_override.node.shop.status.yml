@@ -1,0 +1,22 @@
+uuid: 5082b556-ae82-4d67-8aab-dd96fb64f85d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.shop
+id: node.shop.status
+field_name: status
+entity_type: node
+bundle: shop
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

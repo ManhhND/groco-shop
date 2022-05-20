@@ -1,0 +1,20 @@
+uuid: 2d75a9dc-a410-4039-91c2-08f20103e291
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.groco_shop
+  module:
+    - path
+id: node.groco_shop.path
+field_name: path
+entity_type: node
+bundle: groco_shop
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

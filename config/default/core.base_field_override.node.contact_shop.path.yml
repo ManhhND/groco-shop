@@ -1,0 +1,20 @@
+uuid: 30a1d953-4b29-46a2-8bdc-b80dc4d092b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact_shop
+  module:
+    - path
+id: node.contact_shop.path
+field_name: path
+entity_type: node
+bundle: contact_shop
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

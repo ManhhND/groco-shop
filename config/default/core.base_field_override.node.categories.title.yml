@@ -1,0 +1,18 @@
+uuid: b41bc72d-ca80-42fe-8956-3ce8e9607523
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.categories
+id: node.categories.title
+field_name: title
+entity_type: node
+bundle: categories
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
