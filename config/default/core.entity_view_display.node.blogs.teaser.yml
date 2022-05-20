@@ -30,3 +30,4 @@ hidden:
   field_description_blog: true
   field_img_blog: true
   field_title_blogs: true
+  langcode: true

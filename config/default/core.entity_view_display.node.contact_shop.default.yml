@@ -33,4 +33,5 @@ content:
     type: webform_entity_reference_entity_view
     region: content
 hidden:
+  langcode: true
   links: true

@@ -52,4 +52,5 @@ content:
 hidden:
   field_btn_blog: true
   field_description_blog: true
+  langcode: true
   links: true
