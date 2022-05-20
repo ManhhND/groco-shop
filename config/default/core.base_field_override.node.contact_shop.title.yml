@@ -1,0 +1,18 @@
+uuid: ea80d168-bbce-4f71-9e7b-641f8230a7ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact_shop
+id: node.contact_shop.title
+field_name: title
+entity_type: node
+bundle: contact_shop
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

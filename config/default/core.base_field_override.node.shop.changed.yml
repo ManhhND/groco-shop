@@ -1,0 +1,18 @@
+uuid: af71f05c-7304-4f4e-a23c-4da6bc8b7ac8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.shop
+id: node.shop.changed
+field_name: changed
+entity_type: node
+bundle: shop
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

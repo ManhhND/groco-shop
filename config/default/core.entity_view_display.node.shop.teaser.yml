@@ -38,3 +38,4 @@ hidden:
   field_name_shop: true
   field_product_by_shop: true
   field_shop_contact: true
+  langcode: true

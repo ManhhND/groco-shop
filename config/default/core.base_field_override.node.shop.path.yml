@@ -1,0 +1,20 @@
+uuid: d864f56d-6b17-451d-9104-057cea2e9fbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.shop
+  module:
+    - path
+id: node.shop.path
+field_name: path
+entity_type: node
+bundle: shop
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

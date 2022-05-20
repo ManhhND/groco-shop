@@ -1,0 +1,18 @@
+uuid: 0d8e8bcf-92b9-484f-90eb-89c15d037291
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.groco_shop
+id: node.groco_shop.title
+field_name: title
+entity_type: node
+bundle: groco_shop
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

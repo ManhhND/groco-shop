@@ -34,3 +34,4 @@ hidden:
   field_price_product: true
   field_product_contact: true
   field_shop_products: true
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: d70f7278-05fb-4262-8e08-c4aef148cafa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.groco_shop
+id: node.groco_shop.menu_link
+field_name: menu_link
+entity_type: node
+bundle: groco_shop
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

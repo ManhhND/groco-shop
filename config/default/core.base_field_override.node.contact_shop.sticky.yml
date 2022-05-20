@@ -1,0 +1,22 @@
+uuid: 271f7d52-d4fb-4d12-8715-8a906e32d3d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact_shop
+id: node.contact_shop.sticky
+field_name: sticky
+entity_type: node
+bundle: contact_shop
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

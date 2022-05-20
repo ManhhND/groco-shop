@@ -1,0 +1,18 @@
+uuid: 62fdc89a-87b3-463c-8aaf-e1e6662c8946
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.shop
+id: node.shop.created
+field_name: created
+entity_type: node
+bundle: shop
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

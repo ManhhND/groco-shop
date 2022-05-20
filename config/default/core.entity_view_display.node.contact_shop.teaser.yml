@@ -22,3 +22,4 @@ content:
 hidden:
   field_paragraph_contact: true
   field_wf_contact: true
+  langcode: true

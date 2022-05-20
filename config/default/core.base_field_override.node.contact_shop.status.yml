@@ -1,0 +1,22 @@
+uuid: 907f2a21-16fa-45ce-a494-90b6f910dba6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact_shop
+id: node.contact_shop.status
+field_name: status
+entity_type: node
+bundle: contact_shop
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
