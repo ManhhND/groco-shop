@@ -1,0 +1,19 @@
+uuid: a96d5ae5-4367-4394-8751-68612d4f6493
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_content_banner_au
+field_name: field_content_banner_au
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

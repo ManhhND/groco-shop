@@ -1,0 +1,21 @@
+uuid: f6a01bf5-b546-4804-b06c-a42040652fe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_banner_au
+    - paragraphs.paragraphs_type.banner_about_us
+  module:
+    - text
+id: paragraph.banner_about_us.field_title_banner_au
+field_name: field_title_banner_au
+entity_type: paragraph
+bundle: banner_about_us
+label: 'Title Banner AU'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
