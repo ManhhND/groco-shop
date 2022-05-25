@@ -1,0 +1,21 @@
+uuid: 4181c0dd-da0f-44d1-a0c5-a94f99617e09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_au
+    - paragraphs.paragraphs_type.features_content_about_us
+  module:
+    - text
+id: paragraph.features_content_about_us.field_description_au
+field_name: field_description_au
+entity_type: paragraph
+bundle: features_content_about_us
+label: 'Description AU'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

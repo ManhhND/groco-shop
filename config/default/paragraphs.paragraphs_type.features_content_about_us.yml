@@ -1,0 +1,10 @@
+uuid: 1147a7ee-e552-4d2b-9c47-a8680ddc98ed
+langcode: en
+status: true
+dependencies: {  }
+id: features_content_about_us
+label: 'Features Content About Us'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

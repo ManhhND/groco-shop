@@ -1,0 +1,29 @@
+uuid: fa67d3e3-9c74-44bb-b45b-ad35ee713479
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.features_about_us.field_paragraph_features
+    - paragraphs.paragraphs_type.features_about_us
+  module:
+    - paragraphs
+id: paragraph.features_about_us.default
+targetEntityType: paragraph
+bundle: features_about_us
+mode: default
+content:
+  field_paragraph_features:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,64 @@
+uuid: be6ef799-22ad-4439-a3d7-fa0c577dd1eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_features
+    - paragraphs.paragraphs_type.features_about_us
+    - paragraphs.paragraphs_type.features_content_about_us
+  module:
+    - entity_reference_revisions
+id: paragraph.features_about_us.field_paragraph_features
+field_name: field_paragraph_features
+entity_type: paragraph
+bundle: features_about_us
+label: 'Paragraph Features'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      features_content_about_us: features_content_about_us
+    target_bundles_drag_drop:
+      banner:
+        weight: 13
+        enabled: false
+      banner_about_us:
+        weight: 14
+        enabled: false
+      blogs:
+        weight: 15
+        enabled: false
+      categories:
+        weight: 16
+        enabled: false
+      contact_info:
+        weight: 17
+        enabled: false
+      customer:
+        weight: 18
+        enabled: false
+      customer_content:
+        weight: 19
+        enabled: false
+      features:
+        weight: 20
+        enabled: false
+      features_about_us:
+        weight: 21
+        enabled: false
+      features_content:
+        weight: 22
+        enabled: false
+      features_content_about_us:
+        enabled: true
+        weight: 23
+      products:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions
