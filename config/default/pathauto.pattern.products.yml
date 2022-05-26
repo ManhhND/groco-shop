@@ -1,0 +1,23 @@
+uuid: 8586228f-6400-4828-abc6-baeb9e36888d
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: products
+label: Products
+type: 'canonical_entities:node'
+pattern: '/products/[node:field_nam]'
+selection_criteria:
+  1025eb9b-4871-489d-a99c-2668cee22418:
+    id: 'entity_bundle:node'
+    bundles:
+      products: products
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1025eb9b-4871-489d-a99c-2668cee22418
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Số mục trên một trang'
+      fields:
+        operations:
+          label: 'Thao tác'
+      filters:
+        langcode:
+          expose:
+            label: 'Ngôn ngữ'
+  page_unapproved:
+    display_options:
+      filters:
+        langcode:
+          expose:
+            label: 'Ngôn ngữ'
+      fields:
+        operations:
+          label: 'Thao tác'
