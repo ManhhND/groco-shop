@@ -25,6 +25,10 @@ global-styling:
       css/contactus/contactuspage.css: {}
       css/search/searchproduct.css: {}
       css/search/searchshop.css: {}
+      css/aboutus/banner.css: {}
+      css/aboutus/featurescontent.css: {}
+      css/aboutus/galery.css: {}
+      css/aboutus/location.css: {}
 
 
 
@@ -37,6 +41,7 @@ global-styling:
     https://unpkg.com/swiper@7/swiper-bundle.min.js: { type: external, minified: true }
     //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {}
     js/script.js: {}
+    js/aboutus.js: {}
   dependencies:
     - core/jquery
     - core/jquery.ui.effects.core

@@ -1,0 +1,40 @@
+.paragraph--type--our-galery{
+    margin: 2rem 6%;
+    padding-bottom: 2rem;
+}
+
+.paragraph--type--our-galery .field--name-field-title-galery{
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+    font-weight: bold;padding-bottom: 2rem;
+}
+
+.paragraph--type--our-galery .field--name-field-img-galery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.paragraph--type--our-galery .field--name-field-img-galery .field__item{
+    margin: 0 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 30.33%;
+    flex: 0 0 33.33%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.paragraph--type--our-galery .field--name-field-img-galery .field__item img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.paragraph--type--our-galery .field--name-field-img-galery .field__item:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+
+

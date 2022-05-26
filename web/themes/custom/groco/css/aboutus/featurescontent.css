@@ -1,0 +1,57 @@
+.paragraph--type--features-content-about-us {
+    margin: 4rem 6%;
+}
+
+.paragraph--type--features-content-about-us .box{
+    display: flex;
+}
+.paragraph--type--features-content-about-us .features_img{
+    margin-right: 10rem;
+    padding-left: 10rem;
+
+}
+.paragraph--type--features-content-about-us .features_img img{
+    height: 20rem;
+    width: 27rem;
+    animation: textslideSection 2s ease ;
+    object-fit: cover;
+
+}
+.paragraph--type--features-content-about-us .features_container{
+    width: 55%;
+}
+
+.paragraph--type--features-content-about-us .features_container .field--name-field-title-features{
+    font-size: 2.2rem;
+    font-weight: bold;
+    animation: textslideSection 2s ease ;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+
+.paragraph--type--features-content-about-us .features_container .field--name-field-content-features-au{
+    font-size: 1.5rem;
+    animation: textslideSection 2s ease ;
+    color: var(--light-color);
+    line-height: 2rem;
+}
+
+@keyframes textslideSection2 {
+    0% {
+      transform: translateY(150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.slick-active  .paragraph--type--features-content-about-us .features_container .field--name-field-title-features{
+    animation: textslideSection2 2s ease ;
+}
+
+.slick-active  .paragraph--type--features-content-about-us .features_container .field--name-field-content-features-au{
+    animation: textslideSection2 2s ease ;
+
+}

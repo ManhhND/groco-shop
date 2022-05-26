@@ -1,0 +1,57 @@
+.paragraph--type--banner-about-us{
+    background-image: url(../../image/banner.jpg);
+    background-position: 50%;
+    background-size: cover;
+    height: 70rem;
+    align-items: center;
+
+
+}
+
+.paragraph--type--banner-about-us .title_banner{
+    padding-top: 17rem;
+    padding-left: 18rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--black);
+    padding-bottom: 3rem;
+    animation: slideSection 2s ease ;
+}
+
+.paragraph--type--banner-about-us .content_banner{
+    padding-left: 18rem;
+    width: 55%;
+    font-size: 1.2rem;
+    color: var(--light-color);
+    line-height: 2rem;
+    animation: textslideSection 2s ease-in ;
+}
+
+@keyframes textslideSection {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideSection {
+    0% {
+      transform: translateY(40%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+}
+
+@keyframes slideFeatures {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
