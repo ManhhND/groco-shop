@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.features_content.field_bt
     - field.field.paragraph.features_content.field_cont
+    - field.field.paragraph.features_content.field_content_features
     - field.field.paragraph.features_content.field_img_features
     - field.field.paragraph.features_content.field_title_features_2
     - image.style.thumbnail
@@ -12,6 +13,7 @@ dependencies:
   module:
     - image
     - link
+    - text
 id: paragraph.features_content.default
 targetEntityType: paragraph
 bundle: features_content
@@ -32,6 +34,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_content_features:
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
     region: content
   field_img_features:
     weight: 0

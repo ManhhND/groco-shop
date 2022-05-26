@@ -1,0 +1,23 @@
+uuid: 2072caeb-4c19-42b3-9122-9f5d4beb4317
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_map_our_location
+    - paragraphs.paragraphs_type.our_location
+id: paragraph.our_location.field_map_our_location
+field_name: field_map_our_location
+entity_type: paragraph
+bundle: our_location
+label: 'Map Our Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

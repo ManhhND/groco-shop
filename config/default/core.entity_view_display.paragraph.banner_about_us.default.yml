@@ -1,0 +1,41 @@
+uuid: af95dfb8-8a8d-4209-a145-636b96d20e5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_about_us.field_content_banner_au
+    - field.field.paragraph.banner_about_us.field_image_banner
+    - field.field.paragraph.banner_about_us.field_title_banner_au
+    - paragraphs.paragraphs_type.banner_about_us
+  module:
+    - image
+    - text
+id: paragraph.banner_about_us.default
+targetEntityType: paragraph
+bundle: banner_about_us
+mode: default
+content:
+  field_content_banner_au:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image_banner:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title_banner_au:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

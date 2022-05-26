@@ -1,0 +1,56 @@
+uuid: ddd8b5e0-e939-4a45-ac3e-01c2b8fe4875
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.features_content_about_us.field_content_features_au
+    - field.field.paragraph.features_content_about_us.field_description_au
+    - field.field.paragraph.features_content_about_us.field_image_au
+    - field.field.paragraph.features_content_about_us.field_title_features
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.features_content_about_us
+  module:
+    - image
+    - text
+id: paragraph.features_content_about_us.default
+targetEntityType: paragraph
+bundle: features_content_about_us
+mode: default
+content:
+  field_content_features_au:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_description_au:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_image_au:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title_features:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

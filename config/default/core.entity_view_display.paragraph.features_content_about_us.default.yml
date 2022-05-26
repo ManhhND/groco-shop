@@ -1,0 +1,50 @@
+uuid: d38de5d1-2157-474b-9048-37ccd9aa8d12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.features_content_about_us.field_content_features_au
+    - field.field.paragraph.features_content_about_us.field_description_au
+    - field.field.paragraph.features_content_about_us.field_image_au
+    - field.field.paragraph.features_content_about_us.field_title_features
+    - paragraphs.paragraphs_type.features_content_about_us
+  module:
+    - image
+    - text
+id: paragraph.features_content_about_us.default
+targetEntityType: paragraph
+bundle: features_content_about_us
+mode: default
+content:
+  field_content_features_au:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_description_au:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image_au:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title_features:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

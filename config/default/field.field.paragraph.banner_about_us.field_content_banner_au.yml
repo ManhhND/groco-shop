@@ -1,0 +1,21 @@
+uuid: 478b3e8e-455b-429e-856f-225d94ad7cc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_banner_au
+    - paragraphs.paragraphs_type.banner_about_us
+  module:
+    - text
+id: paragraph.banner_about_us.field_content_banner_au
+field_name: field_content_banner_au
+entity_type: paragraph
+bundle: banner_about_us
+label: 'Content Banner AU'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

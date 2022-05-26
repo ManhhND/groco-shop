@@ -1,0 +1,45 @@
+uuid: 4f1bae05-6bad-40c6-a93a-6fd4c327c7bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_about_us.field_content_banner_au
+    - field.field.paragraph.banner_about_us.field_image_banner
+    - field.field.paragraph.banner_about_us.field_title_banner_au
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.banner_about_us
+  module:
+    - image
+    - text
+id: paragraph.banner_about_us.default
+targetEntityType: paragraph
+bundle: banner_about_us
+mode: default
+content:
+  field_content_banner_au:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image_banner:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title_banner_au:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
