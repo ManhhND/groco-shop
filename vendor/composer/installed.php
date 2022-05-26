@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '978a77063c557541c149edfdd1c50eed28db9733',
+        'reference' => 'b861a126eb5b680beb27483d95008f2042e49f72',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -547,6 +547,15 @@
                 0 => '8.9.20',
             ),
         ),
+        'drupal/ctools' => array(
+            'pretty_version' => '3.7.0',
+            'version' => '3.7.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/ctools',
+            'aliases' => array(),
+            'reference' => '8.x-3.7',
+            'dev_requirement' => false,
+        ),
         'drupal/datetime' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -739,7 +748,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '978a77063c557541c149edfdd1c50eed28db9733',
+            'reference' => 'b861a126eb5b680beb27483d95008f2042e49f72',
             'dev_requirement' => false,
         ),
         'drupal/link' => array(
@@ -846,6 +855,15 @@
             'replaced' => array(
                 0 => '8.9.20',
             ),
+        ),
+        'drupal/pathauto' => array(
+            'pretty_version' => '1.10.0',
+            'version' => '1.10.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/pathauto',
+            'aliases' => array(),
+            'reference' => '8.x-1.10',
+            'dev_requirement' => false,
         ),
         'drupal/quickedit' => array(
             'dev_requirement' => false,
