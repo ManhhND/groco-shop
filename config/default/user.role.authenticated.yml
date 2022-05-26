@@ -28,4 +28,6 @@ permissions:
   - 'view paragraph content features_about_us'
   - 'view paragraph content features_content'
   - 'view paragraph content features_content_about_us'
+  - 'view paragraph content our_galery'
+  - 'view paragraph content our_location'
   - 'view paragraph content products'

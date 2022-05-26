@@ -7,6 +7,8 @@ dependencies:
     - node.type.about_us
     - paragraphs.paragraphs_type.banner_about_us
     - paragraphs.paragraphs_type.features_about_us
+    - paragraphs.paragraphs_type.our_galery
+    - paragraphs.paragraphs_type.our_location
   module:
     - entity_reference_revisions
 id: node.about_us.field_paragraph_about_us
@@ -26,6 +28,8 @@ settings:
     target_bundles:
       banner_about_us: banner_about_us
       features_about_us: features_about_us
+      our_galery: our_galery
+      our_location: our_location
     target_bundles_drag_drop:
       banner:
         weight: 10
@@ -60,6 +64,12 @@ settings:
       features_content_about_us:
         weight: 23
         enabled: false
+      our_galery:
+        enabled: true
+        weight: 25
+      our_location:
+        enabled: true
+        weight: 27
       products:
         weight: 18
         enabled: false
