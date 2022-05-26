@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_paragraph_about_us
     - node.type.about_us
     - paragraphs.paragraphs_type.banner_about_us
-    - paragraphs.paragraphs_type.features_content
+    - paragraphs.paragraphs_type.features_about_us
   module:
     - entity_reference_revisions
 id: node.about_us.field_paragraph_about_us
@@ -25,7 +25,7 @@ settings:
     negate: 0
     target_bundles:
       banner_about_us: banner_about_us
-      features_content: features_content
+      features_about_us: features_about_us
     target_bundles_drag_drop:
       banner:
         weight: 10
@@ -51,9 +51,15 @@ settings:
       features:
         weight: 16
         enabled: false
-      features_content:
+      features_about_us:
         enabled: true
+        weight: 21
+      features_content:
         weight: 17
+        enabled: false
+      features_content_about_us:
+        weight: 23
+        enabled: false
       products:
         weight: 18
         enabled: false
