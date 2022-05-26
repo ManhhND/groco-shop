@@ -1,0 +1,49 @@
+uuid: d830c56c-5e6c-4b7f-9321-6df916e69071
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_location.field_map_our_location
+    - field.field.paragraph.our_location.field_title_our_location
+    - paragraphs.paragraphs_type.our_location
+    - views.view.our_location
+  module:
+    - text
+    - views_field_formatter
+id: paragraph.our_location.default
+targetEntityType: paragraph
+bundle: our_location
+mode: default
+content:
+  field_map_our_location:
+    weight: 1
+    label: hidden
+    settings:
+      view: 'our_location::default'
+      arguments:
+        field_value:
+          checked: '1'
+          weight: '0'
+        entity_id:
+          checked: '1'
+          weight: '0'
+        delta:
+          checked: '1'
+          weight: '0'
+        entity_revision_id:
+          checked: '1'
+          weight: '0'
+      implode_character: ''
+      hide_empty: 0
+      multiple: 0
+    third_party_settings: {  }
+    type: views_field_formatter
+    region: content
+  field_title_our_location:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

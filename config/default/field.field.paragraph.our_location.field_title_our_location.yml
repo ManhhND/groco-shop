@@ -1,0 +1,21 @@
+uuid: 461d8fdb-8413-4951-ac5c-c710846744ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_our_location
+    - paragraphs.paragraphs_type.our_location
+  module:
+    - text
+id: paragraph.our_location.field_title_our_location
+field_name: field_title_our_location
+entity_type: paragraph
+bundle: our_location
+label: 'Title Our Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
