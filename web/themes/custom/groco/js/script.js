@@ -32,3 +32,19 @@ jQuery('.slide_product').slick({
     },
 });
 
+let userProfile = document.querySelector('.menu-account');
+let loginForm = document.querySelector('.form-login');
+
+document.querySelector('#login-btn').onclick = () => {
+    userProfile.classList.toggle('active');
+
+    loginForm.classList.toggle('active');
+    console.log('1');
+    
+}
+
+
+jQuery("#edit-name").attr("placeholder", "Your Email");
+
+jQuery("#edit-pass").attr("placeholder", "Your Password");
+

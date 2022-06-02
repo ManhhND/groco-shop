@@ -4,3 +4,15 @@
  * @file
  * Functions to support theming in the Groco theme.
  */
+
+function groco_preprocess_menu(&$variables,$hook) {
+    $items = $variables['items'];
+    if ($variables['menu_name'] == 'account'){        
+        // echo count($items);        
+        if (count($items) < 2){
+            // echo 'abcdef';
+            $variables['check'] = 'display:none';
+
+        }
+    }
+}
