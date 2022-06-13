@@ -4,12 +4,12 @@
 .user-register-form .option{
     font-size: 1rem;
 }
-#edit-contact{
+.user-register-form #edit-contact{
     font-size: 1rem;
 }
 
 
-#edit-account .form-required{
+.user-register-form #edit-account .form-required{
     font-size: 1.3rem;
     color: var(--black);
 }
@@ -17,15 +17,15 @@
     margin-top: .5rem;
     font-size: 1rem;
 }
-.password-strength__title{
+.user-register-form .password-strength__title{
     margin-top: .5rem;
     font-size: 1rem;
 }
-.password-confirm{
+.user-register-form .password-confirm{
     margin-top: .5rem;
     font-size: 1rem;
 }
-.js-form-type-email .form-email{
+.user-register-form .js-form-type-email .form-email{
     width: 30rem;
     display: flex;
     margin-top:1rem;
@@ -36,7 +36,7 @@
     background-color: #eee;
 }
 
-.js-form-type-textfield input{
+.user-register-form .js-form-type-textfield input{
     width: 30rem;
     display: flex;
     margin-top:1rem;
@@ -47,7 +47,7 @@
     font-size: 1rem;
 }
 
-.password-field{
+.user-register-form .password-field{
     width: 30rem;
     display: flex;
     margin-top:1rem;
@@ -58,7 +58,7 @@
     font-size: 1rem;
 }
 
-.form-type-password input{
+.user-register-form.form-type-password input{
     width: 30rem;
     display: flex;
     margin-top:1rem;
@@ -69,7 +69,7 @@
     font-size: 1rem;
 }
 
-.button--primary{
+.user-register-form.button--primary{
     height: 3rem;
     height: 3rem;
     width: 15rem;
@@ -81,7 +81,7 @@
 }
 
 
-.button--primary:hover{
+.user-register-form .button--primary:hover{
     background-color: var(--orange);
     color: #fff;
 }
