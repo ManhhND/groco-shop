@@ -5,6 +5,7 @@ global-styling:
       # css/bootstrap.css: {}
       css/style.css: {}
       css/menu.css: {}
+      css/register.css: {}
       css/features.css: {}
       css/banner.css: {}
       css/products.css: {}
