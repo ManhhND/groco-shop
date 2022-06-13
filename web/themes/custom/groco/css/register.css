@@ -1,0 +1,132 @@
+.user-register-form{
+    margin: 2rem 6%;
+}
+.user-register-form .option{
+    font-size: 1rem;
+}
+#edit-contact{
+    font-size: 1rem;
+}
+
+
+#edit-account .form-required{
+    font-size: 1.3rem;
+    color: var(--black);
+}
+.user-register-form .description{
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+.password-strength__title{
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+.password-confirm{
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+.js-form-type-email .form-email{
+    width: 30rem;
+    display: flex;
+    margin-top:1rem;
+    padding-left: 1rem;
+    height: 3rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    background-color: #eee;
+}
+
+.js-form-type-textfield input{
+    width: 30rem;
+    display: flex;
+    margin-top:1rem;
+    padding-left: 1rem;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: #eee;
+    font-size: 1rem;
+}
+
+.password-field{
+    width: 30rem;
+    display: flex;
+    margin-top:1rem;
+    padding-left: 1rem;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: #eee;
+    font-size: 1rem;
+}
+
+.form-type-password input{
+    width: 30rem;
+    display: flex;
+    margin-top:1rem;
+    padding-left: 1rem;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: #eee;
+    font-size: 1rem;
+}
+
+.button--primary{
+    height: 3rem;
+    height: 3rem;
+    width: 15rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    color: var(--black);
+    border: .2rem solid var(--black);
+}
+
+
+.button--primary:hover{
+    background-color: var(--orange);
+    color: #fff;
+}
+
+
+
+.user-pass{
+    height: 34rem;
+    margin: 2rem 6%;
+}
+
+.user-pass .form-required{
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.user-pass .form-text{
+    width: 30rem;
+    display: flex;
+    margin-top:1rem;
+    padding-left: 1rem;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: #eee;
+    font-size: 1rem;
+}
+
+.user-pass p{
+    font-size: 1rem;
+}
+
+.user-pass .js-form-submit{
+
+    height: 3rem;
+    height: 3rem;
+    width: 15rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    color: var(--black);
+    border: .2rem solid var(--black);
+}
+
+
+.user-pass .js-form-submit:hover{
+    background-color: var(--orange);
+    color: #fff;
+}
