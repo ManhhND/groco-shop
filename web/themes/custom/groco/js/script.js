@@ -48,3 +48,14 @@ jQuery("#edit-name").attr("placeholder", "Your Email");
 
 jQuery("#edit-pass").attr("placeholder", "Your Password");
 
+jQuery("#edit-mail").attr("placeholder", "Your Email");
+
+jQuery("#edit-pass-pass1").attr("placeholder", "Your Password");
+
+jQuery("#edit-pass-pass2").attr("placeholder", "Confirm Your Password");
+
+jQuery("#edit-name--2").attr("placeholder", "Your Email");
+
+jQuery("#edit-pass--2").attr("placeholder", "Your Password");
+
+
