@@ -1,6 +1,6 @@
 uuid: 62ea1dae-d211-4544-b7cc-07a3afee7126
 name: 'Groco Shop'
-mail: admin@example.com
+mail: duongk52a2@gmail.com
 slogan: ''
 page:
   403: ''
@@ -12,4 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
-mail_notification: ''
+mail_notification: duongk52a2@gmail.com
