@@ -115,10 +115,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
+  confirmation_type: url_message
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
+  confirmation_url: '<front> '
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -194,5 +194,79 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email_confirmation_shop:
+    id: email
+    label: 'Email Confirmation Shop'
+    notes: ''
+    handler_id: email_confirmation_shop
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: 'Notification: New Contact Email'
+      body: "You just have recevied a new contact email. Please check as soon as.\r\n<p>Submitted on {{ webform_token('[webform_submission:created]', webform_submission, [], options) }}<br></p>-----\r\n<p>Submitted by: {{ webform_token('[webform_submission:user]', webform_submission, [], options) }}<br></p>-----\r\n<p>Submitted values are:</p>\r\n<p>---Your Name:{{ webform_token('[webform_submission:values:your_name]', webform_submission, [], options) }}</p>------\r\n<p>Your Phone: {{ webform_token('[webform_submission:values:number]', webform_submission, [], options) }}</p>-------\r\n<p>Your Phone: {{ webform_token('[webform_submission:values:your_email]', webform_submission, [], options) }}</p>-------\r\n<p>Your message: {{ webform_token('[webform_submission:values:message]', webform_submission, [], options) }} </p>------"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: true
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_notification_shop:
+    id: email
+    label: 'Email Notification Shop'
+    notes: ''
+    handler_id: email_notification_shop
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:your_email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:your_email:raw]'
+      from_options: {  }
+      from_name: _default
+      subject: 'Groco Shop: Confirm Send Email'
+      body: "<p>Thanks for your contact email. We will get back to you as soon as possiable.</p>\r\n----------<br />\r\n&nbsp;\r\n<p>WebSite | GrocoShop</p>"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
 variants: {  }

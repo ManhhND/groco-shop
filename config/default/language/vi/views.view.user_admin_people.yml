@@ -6,5 +6,7 @@ display:
           expose:
             items_per_page_label: 'Số mục trên một trang'
       fields:
+        name:
+          label: 'Tên người dùng'
         operations:
           label: 'Thao tác'

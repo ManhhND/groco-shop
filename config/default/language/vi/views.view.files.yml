@@ -11,3 +11,7 @@ display:
         options:
           expose:
             items_per_page_label: 'Số mục trên một trang'
+      arguments:
+        fid:
+          exception:
+            title: 'Tất cả'

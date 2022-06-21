@@ -5,3 +5,7 @@ display:
         options:
           expose:
             items_per_page_label: 'Số mục trên một trang'
+      arguments:
+        tid:
+          exception:
+            title: 'Tất cả'
