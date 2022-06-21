@@ -8,6 +8,10 @@ display:
       fields:
         view_webform_submission:
           label: 'Thao tác'
+      arguments:
+        in_draft:
+          exception:
+            title: 'Tất cả'
   embed_administer:
     display_options:
       fields:

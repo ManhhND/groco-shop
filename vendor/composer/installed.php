@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'b861a126eb5b680beb27483d95008f2042e49f72',
+        'reference' => '83131eb396edaa2cba19c29536a528cf4996eb52',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -748,7 +748,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'b861a126eb5b680beb27483d95008f2042e49f72',
+            'reference' => '83131eb396edaa2cba19c29536a528cf4996eb52',
             'dev_requirement' => false,
         ),
         'drupal/link' => array(
@@ -762,6 +762,15 @@
             'replaced' => array(
                 0 => '8.9.20',
             ),
+        ),
+        'drupal/mailsystem' => array(
+            'pretty_version' => '4.3.0',
+            'version' => '4.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/mailsystem',
+            'aliases' => array(),
+            'reference' => '8.x-4.3',
+            'dev_requirement' => false,
         ),
         'drupal/media' => array(
             'dev_requirement' => false,
@@ -924,6 +933,15 @@
             'replaced' => array(
                 0 => '8.9.20',
             ),
+        ),
+        'drupal/smtp' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/smtp',
+            'aliases' => array(),
+            'reference' => '8.x-1.0',
+            'dev_requirement' => false,
         ),
         'drupal/standard' => array(
             'dev_requirement' => false,
@@ -1274,6 +1292,15 @@
             'install_path' => __DIR__ . '/../phayes/geophp',
             'aliases' => array(),
             'reference' => '015404e85b602e0df1f91441f8db0f9e98f7e567',
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.6.3',
+            'version' => '6.6.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => '9400f305a898f194caff5521f64e5dfa926626f3',
             'dev_requirement' => false,
         ),
         'psr/container' => array(
