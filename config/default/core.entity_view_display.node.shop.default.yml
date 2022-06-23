@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.shop.field_category_shop
     - field.field.node.shop.field_d
     - field.field.node.shop.field_img_shop
+    - field.field.node.shop.field_img_verify
     - field.field.node.shop.field_info_shop
     - field.field.node.shop.field_intr
     - field.field.node.shop.field_logo_shop
@@ -44,6 +45,15 @@ content:
     region: content
   field_img_shop:
     weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_img_verify:
+    weight: 11
     label: hidden
     settings:
       image_style: ''
