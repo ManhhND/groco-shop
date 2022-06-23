@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.shop.field_category_shop
     - field.field.node.shop.field_d
     - field.field.node.shop.field_img_shop
+    - field.field.node.shop.field_img_verify
     - field.field.node.shop.field_info_shop
     - field.field.node.shop.field_intr
     - field.field.node.shop.field_logo_shop
@@ -52,6 +53,14 @@ content:
     region: content
   field_img_shop:
     weight: 126
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_img_verify:
+    weight: 133
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

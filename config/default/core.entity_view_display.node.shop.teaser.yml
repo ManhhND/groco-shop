@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.shop.field_category_shop
     - field.field.node.shop.field_d
     - field.field.node.shop.field_img_shop
+    - field.field.node.shop.field_img_verify
     - field.field.node.shop.field_info_shop
     - field.field.node.shop.field_intr
     - field.field.node.shop.field_logo_shop
@@ -31,6 +32,7 @@ hidden:
   field_category_shop: true
   field_d: true
   field_img_shop: true
+  field_img_verify: true
   field_info_shop: true
   field_intr: true
   field_logo_shop: true
