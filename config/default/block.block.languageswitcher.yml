@@ -9,7 +9,7 @@ dependencies:
 id: languageswitcher
 theme: groco
 region: header
-weight: -8
+weight: -9
 provider: null
 plugin: 'language_block:language_interface'
 settings:
