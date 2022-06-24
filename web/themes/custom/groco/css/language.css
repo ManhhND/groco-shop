@@ -9,10 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 7rem;
-    right:5rem;
-    z-index: 4;
 }
 
 
