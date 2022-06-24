@@ -1,9 +1,18 @@
 
-
+header{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 5.8rem;
+}
+.layout-container{
+    margin-top: 5.8rem;
+}
 /* .menu--main{
     
 } */
 .region-header {
+    
     display: flex;
     background-color: #fff;
     justify-content: space-between;
