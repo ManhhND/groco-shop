@@ -15,7 +15,7 @@ bundle: products
 label: product-contact
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     default_data: ''
