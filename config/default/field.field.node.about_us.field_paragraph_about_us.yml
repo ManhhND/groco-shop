@@ -18,7 +18,7 @@ bundle: about_us
 label: 'Paragraph About Us'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

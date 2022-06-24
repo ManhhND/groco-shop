@@ -14,7 +14,7 @@ bundle: shop
 label: description-shop
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: "<p><span class=\"fontawesome-icon-inline\"><i class=\"fas fa-calendar-alt\"></i>&nbsp;<span class=\"fontawesome-icon-inline\"><i class=\"fas fa-check-circle\"></i>&nbsp;<span class=\"fontawesome-icon-inline\"><i class=\"fas fa-location-circle\"></i>&nbsp;<span class=\"fontawesome-icon-inline\"><i class=\"fas fa-location-arrow\"></i>&nbsp;</span></span></span></span></p>\r\n"

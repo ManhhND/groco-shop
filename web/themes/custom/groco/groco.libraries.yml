@@ -4,6 +4,7 @@ global-styling:
     theme:
       # css/bootstrap.css: {}
       css/style.css: {}
+      css/language.css: {}
       css/menu.css: {}
       css/register.css: {}
       css/features.css: {}

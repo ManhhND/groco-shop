@@ -1,0 +1,22 @@
+uuid: 0177ab28-26a6-4411-a5be-cda829318ace
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.our_galery
+id: paragraph.our_galery.status
+field_name: status
+entity_type: paragraph
+bundle: our_galery
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

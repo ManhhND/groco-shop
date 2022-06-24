@@ -1,0 +1,18 @@
+uuid: 34c57943-a04f-4269-a589-665ef8fe2e17
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.banner_about_us
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.banner_about_us
+target_entity_type_id: paragraph
+target_bundle: banner_about_us
+default_langcode: site_default
+language_alterable: false

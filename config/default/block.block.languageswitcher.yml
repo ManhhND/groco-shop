@@ -1,0 +1,20 @@
+uuid: f8952b2d-81f8-4919-b871-75a573155b9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - groco
+id: languageswitcher
+theme: groco
+region: header
+weight: -8
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: visible
+visibility: {  }

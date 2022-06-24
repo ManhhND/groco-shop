@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_img_categories
     - node.type.categories
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.categories.field_img_categories
 field_name: field_img_categories
 entity_type: node
@@ -14,7 +21,7 @@ bundle: categories
 label: img-categories
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

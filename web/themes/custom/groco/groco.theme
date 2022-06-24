@@ -16,3 +16,20 @@ function groco_preprocess_menu(&$variables,$hook) {
         }
     }
 }
+
+
+
+function groco_preprocess_links(&$variables){
+    $items = $variables['links'];
+    // dump($items);
+    foreach($items as $key => $item){
+        // dump($items[$key]);
+        if ($items[$key]['text'] == 'English'){
+            $variables['links'][$key]['iconLanguage'] = '/sites/default/files/2022-06/UK.png';
+        }
+        if ($items[$key]['text'] == 'Vietnamese'){
+            $variables['links'][$key]['iconLanguage'] = '/sites/default/files/2022-06/VN.png';
+        }
+        
+    }
+}
