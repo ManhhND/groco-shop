@@ -36,14 +36,13 @@
 }
 
 .dropdown-language{
-    width: 9rem;
+    width: 10rem;
     height: 5rem;
-    right:30%;
-    top:4.8rem;
+    margin-top:8.5rem;
     display: none; 
     position: absolute;
     z-index: 1;
-    margin-right: 2rem;
+    margin-right: 6.4rem;
     background: #eee;
     align-items: center;
     justify-content: center;
@@ -59,6 +58,5 @@
     float: left;
     margin-left: 1rem;
     font-size: 1.1rem;
+    font-weight: bold;
 }
-
-
