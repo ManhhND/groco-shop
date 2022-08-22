@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.products.field_btn_product
     - field.field.node.products.field_categories_product
     - field.field.node.products.field_img_product
+    - field.field.node.products.field_info
     - field.field.node.products.field_info_product
     - field.field.node.products.field_nam
     - field.field.node.products.field_price_product
@@ -17,6 +18,7 @@ dependencies:
     - image
     - link
     - path
+    - text
     - webform
 id: node.products.default
 targetEntityType: node
@@ -54,6 +56,14 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_info:
+    weight: 131
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_info_product:
     weight: 128
@@ -139,6 +149,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5

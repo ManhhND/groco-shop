@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.categories.field_img_categories
     - field.field.node.categories.field_name_categories
     - field.field.node.categories.field_s
+    - field.field.node.categories.field_views
     - image.style.thumbnail
     - node.type.categories
   module:
@@ -56,6 +57,16 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_views:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -98,6 +109,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
