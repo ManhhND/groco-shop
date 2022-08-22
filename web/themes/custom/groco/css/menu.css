@@ -188,3 +188,9 @@ ul.menu{
     color: var(--orange);
 }
 
+.language-switcher-language-url{
+    position: absolute;
+    z-index: 1;
+    margin-top: 1.3rem;
+    margin-left: 85%;
+}

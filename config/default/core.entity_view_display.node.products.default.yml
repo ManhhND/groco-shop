@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.products.field_btn_product
     - field.field.node.products.field_categories_product
     - field.field.node.products.field_img_product
+    - field.field.node.products.field_info
     - field.field.node.products.field_info_product
     - field.field.node.products.field_nam
     - field.field.node.products.field_price_product
@@ -15,6 +16,7 @@ dependencies:
   module:
     - image
     - link
+    - text
     - user
     - webform
 id: node.products.default
@@ -36,7 +38,7 @@ content:
     region: content
   field_categories_product:
     weight: 9
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -50,6 +52,13 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_info:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_info_product:
     weight: 7

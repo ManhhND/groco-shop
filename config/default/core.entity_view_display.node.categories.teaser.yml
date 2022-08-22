@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.categories.field_img_categories
     - field.field.node.categories.field_name_categories
     - field.field.node.categories.field_s
+    - field.field.node.categories.field_views
     - node.type.categories
   module:
     - user
@@ -26,4 +27,5 @@ hidden:
   field_img_categories: true
   field_name_categories: true
   field_s: true
+  field_views: true
   langcode: true
