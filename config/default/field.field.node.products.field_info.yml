@@ -1,0 +1,21 @@
+uuid: 599805d9-81a0-409b-890a-d6e6100b042b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_info
+    - node.type.products
+  module:
+    - text
+id: node.products.field_info
+field_name: field_info
+entity_type: node
+bundle: products
+label: info
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
