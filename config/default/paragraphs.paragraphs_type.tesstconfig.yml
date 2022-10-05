@@ -1,0 +1,10 @@
+uuid: 273e19e1-188a-4f27-9541-7c1e042b9224
+langcode: en
+status: true
+dependencies: {  }
+id: tesstconfig
+label: tesstconfig
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

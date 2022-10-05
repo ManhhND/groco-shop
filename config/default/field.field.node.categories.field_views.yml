@@ -1,0 +1,23 @@
+uuid: 6ab102a2-6fc2-4669-ac68-226fb3b3a3b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_views
+    - node.type.categories
+id: node.categories.field_views
+field_name: field_views
+entity_type: node
+bundle: categories
+label: views
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

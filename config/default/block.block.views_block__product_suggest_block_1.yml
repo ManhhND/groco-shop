@@ -1,0 +1,41 @@
+uuid: bc27e1d7-dcb7-4832-aff6-327b10a02fe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_suggest
+  module:
+    - ctools
+    - node
+    - views
+  theme:
+    - groco
+id: views_block__product_suggest_block_1
+theme: groco
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:product_suggest-block_1'
+settings:
+  id: 'views_block:product_suggest-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      products: products
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      products: products
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
